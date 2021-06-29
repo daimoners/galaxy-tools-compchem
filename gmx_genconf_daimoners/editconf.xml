@@ -14,8 +14,8 @@
         gmx genconf
             -f ./input.$input_file.ext
             -o ./output.${output_format}
-            -nbox ($box $box $box)
-            -dist ($dist $dist $dist)
+            -nbox $box $box $box
+            -dist $dist $dist $dist
             &>> verbose.txt &&
 
         cp ./output.${output_format} '$output'
