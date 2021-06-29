@@ -1,4 +1,4 @@
-<tool id="gmx_editconf_daimoners" name="GROMACS structure configuration daimoners edition"  version="@TOOL_VERSION@+galaxy@GALAXY_VERSION@">
+<tool id="gmx_editconf_daimoners" name="GROMACS genconf daimoners edition"  version="@TOOL_VERSION@+galaxy@GALAXY_VERSION@">
     <description>using editconf</description>
     <macros>
         <token name="@GALAXY_VERSION@">0</token>
@@ -9,7 +9,6 @@
 
     <command detect_errors="exit_code"><![CDATA[
 
-        echo "boxtype.boxytype:" $box.boxtype.boxtype >> verbose.txt &&
         
         ln -s '$input_file' ./input.$input_file.ext &&
         gmx genconf
