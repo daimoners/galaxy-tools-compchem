@@ -28,7 +28,7 @@
             <option value="gro">GRO file</option>
             <option value="pdb">PDB file</option>
         </param>
-        <param argument="box" type="float" label="Box dimensions in nanometers" value="0.0" min="0.0" max="1000.0" help="Dimensions of the box in which simulation will take place" />
+        <param argument="box" type="float" label="Number of molecules per row" value="0.0" min="0.0" max="1000.0" help="Example: inserting 3 will result in 27 molecules disposed in a cube of 3x3x3 molecules" />
         <param argument="dist" type="float" label="Distance in nanometers" value="0.0" min="0.0" max="10.0" help="Distance between different instance of the molecule" />
 
     <expand macro="log" />
